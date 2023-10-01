@@ -1,5 +1,6 @@
 declare module 'react-native-ico-logo' {
     import { ReactNode } from 'react';
+    import { SvgProps, AdditionalProps } from 'react-native-svg';
 
     type iconNames = 'yelp' |
       'xiaomi' |
@@ -132,7 +133,7 @@ declare module 'react-native-ico-logo' {
       badge?: number | string | badgeTypeObj;
     }
 
-    const Icon: (props: IconProps) => ReactNode;
+    const Icon: (props: IconProps & SvgProps & AdditionalProps) => ReactNode;
 
     export { iconNames };
     export default Icon;
