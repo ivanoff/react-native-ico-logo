@@ -102,7 +102,65 @@ declare module 'react-native-ico-logo' {
       'after-effects' |
       'adidas';
 
+    type iconColors = '#00897B' |
+      '#00BCD4' |
+      '#0277BD' |
+      '#03A9F4' |
+      '#0D47A1' |
+      '#1565C0' |
+      '#1976D2' |
+      '#1A937D' |
+      '#1E88E5' |
+      '#2196F3' |
+      '#263238' |
+      '#2E7D32' |
+      '#303F9F' |
+      '#37474F' |
+      '#388E3C' |
+      '#43A047' |
+      '#455A64' |
+      '#472A49' |
+      '#4CAF50' |
+      '#512DA8' |
+      '#64B5F6' |
+      '#65863A' |
+      '#66BB6A' |
+      '#7B1FA2' |
+      '#8BC34A' |
+      '#90CAF9' |
+      '#B0BEC5' |
+      '#BA68C8' |
+      '#BBDEFB' |
+      '#C8E6C9' |
+      '#CC2027' |
+      '#CDDC39' |
+      '#CFD8DC' |
+      '#D1C4E9' |
+      '#D32F2F' |
+      '#D81B60' |
+      '#E1BEE7' |
+      '#E64A19' |
+      '#EC407A' |
+      '#ECEFF1' |
+      '#EF6C00' |
+      '#F06292' |
+      '#F44336' |
+      '#F57C00' |
+      '#FAFAFA' |
+      '#FB8C00' |
+      '#FF5722' |
+      '#FF9800' |
+      '#FFA000' |
+      '#FFC107' |
+      '#FFCA28' |
+      '#FFD54F' |
+      '#FFE0B2' |
+      '#FFEB3B' |
+      '#FFECB3';
+
     type backgroundType = 'circle' | 'rect' | 'button';
+
+    type colorsType = Record<iconColors, string>;
 
     type positionType = 'top' | 'bottom' | 'right' | 'left' |
       'top_right' | 'top_left' | 'bottom_right' | 'bottom_left';
@@ -119,6 +177,7 @@ declare module 'react-native-ico-logo' {
       fontSize?: string;
       position?: positionType;
       color?: string;
+      colors: colorsType;
       backgroundColor?: string;
       radius?: number;
     };
@@ -128,6 +187,7 @@ declare module 'react-native-ico-logo' {
       width?: number;
       height?: number;
       color?: string;
+      colors: colorsType;
       stroke?: number;
       background?: backgroundType | backgroundTypeObj;
       badge?: number | string | badgeTypeObj;
